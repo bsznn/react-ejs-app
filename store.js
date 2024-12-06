@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import path from "noth:path";
+import path from "node:path";
 
 const filename = path.join(process.cwd(), "db.json")
 const saveChanges = (data) => fs.writeFile(filename, JSON.stringify(data))
